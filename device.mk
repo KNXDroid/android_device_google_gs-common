@@ -18,6 +18,8 @@ ifeq (,$(filter true, $(PRODUCT_WITHOUT_TTS_VOICE_PACKS)))
 include device/google/gs-common/tts/voice_packs.mk
 endif
 
+include vendor/google/camera/config.mk
+
 PRODUCT_SOONG_NAMESPACES += \
 	device/google/gs-common/powerstats
 
